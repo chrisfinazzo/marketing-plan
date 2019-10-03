@@ -1,4 +1,3 @@
-.SUFFIXES: .tex .pdf
+build: christopher-m-finazzo-marketing-plan.tex
+	xelatex $<
 
-.tex.pdf:
-	pdflatex $<
