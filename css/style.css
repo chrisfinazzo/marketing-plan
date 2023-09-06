@@ -1,0 +1,49 @@
+:root {
+  --document: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--document);
+}
+
+table {
+  margin: 0 auto;
+}
+
+thead, tbody {
+  text-align: center;
+}
+
+.row {
+  text-align: left;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.name {
+  text-align: center;
+}
+
+.heading, .objective {
+  text-align: center;
+}
+
+.statement {
+  text-align: left;
+}
