@@ -16,11 +16,11 @@ table {
   margin: 0 auto;
 }
 
-thead, tbody {
+.heading, .name, .objective, thead, tbody {
   text-align: center;
 }
 
-.row {
+.row, .statement {
   text-align: left;
 }
 
@@ -34,16 +34,4 @@ thead, tbody {
 
 .clearfix {
   clear: both;
-}
-
-.name {
-  text-align: center;
-}
-
-.heading, .objective {
-  text-align: center;
-}
-
-.statement {
-  text-align: left;
 }
