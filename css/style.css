@@ -2,13 +2,13 @@
   --document: Arial, sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@page {
+  size: 8.5in 11in;
+  margin: 0.5in;
 }
 
-html {
+@media print {
+body {
   font-family: var(--document);
 }
 
@@ -34,4 +34,6 @@ table {
 
 .clearfix {
   clear: both;
+}
+
 }
