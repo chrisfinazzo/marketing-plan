@@ -4,11 +4,15 @@
 
 @page {
   size: 8.5in 11in;
-  margin: 0.5in;
 }
 
-@media print {
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
   font-family: var(--document);
 }
 
@@ -34,6 +38,4 @@ table {
 
 .clearfix {
   clear: both;
-}
-
 }
