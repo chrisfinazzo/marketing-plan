@@ -1,44 +1,64 @@
 :root {
-  --document: Arial, sans-serif;
+  --document: Times New Roman, Times, Baskerville, Georgia, serif;
 }
 
 @page {
   size: 8.5in 11in;
+  margin: 0.5in;
 }
 
 @media print {
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  body {
+    font-family: var(--document);
+  }
 
-html {
-  font-family: var(--document);
-}
+  a:link {
+    text-decoration: none;
+  }
 
-table {
-  margin: 0 auto;
-}
+  h2 {
+    margin-bottom: 0.002202643172in;
+  }
 
-.heading, .name, .objective, thead, tbody {
-  text-align: center;
-}
+  h2, h4, th, .heading, .linkedin {
+    text-align: center;
+  }
 
-.row, .statement {
-  text-align: left;
-}
+  .p1-header, .p2-header {
+    display: flex;
+  }
 
-.left {
-  float: left;
-}
+  .p1-header {
+    justify-content: space-between;
+  }
 
-.right {
-  float: right;
-}
+  .p2-header {
+    justify-content: space-around;
+  }
 
-.clearfix {
-  clear: both;
-}
+  .date {
+    float: right;
+  }
+
+  .statement {
+    line-height: 1.2;
+  }
+
+  .company, .position, .heading, .p2-name {
+    font-weight: bold;
+  }
+
+  .company, .heading {
+    text-transform: uppercase;
+  }
+
+  table, th, td {
+    white-space: normal;
+    margin: 0.5;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
 
 }
