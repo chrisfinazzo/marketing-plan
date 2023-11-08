@@ -1,5 +1,5 @@
 :root {
-  --document: Times New Roman, Times, Baskerville, Georgia, serif;
+  --document: Arial, sans-serif;
 }
 
 @page {
@@ -8,57 +8,33 @@
 }
 
 @media print {
-  body {
+  html {
     font-family: var(--document);
   }
-
-  a:link {
-    text-decoration: none;
+  
+  html, body, p, div, table, thead, tbody, th, td {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  h2 {
-    margin-bottom: 0.002202643172in;
-  }
-
-  h2, h4, th, .heading, .linkedin {
+  .heading, .name, .objective, thead, tbody {
     text-align: center;
   }
 
-  .p1-header, .p2-header {
-    display: flex;
+  .row, .statement {
+    text-align: left;
   }
 
-  .p1-header {
-    justify-content: space-between;
+  .left {
+    float: left;
   }
 
-  .p2-header {
-    justify-content: space-around;
-  }
-
-  .date {
+  .right {
     float: right;
   }
 
-  .statement {
-    line-height: 1.2;
+  .clearfix {
+    clear: both;
   }
-
-  .company, .position, .heading, .p2-name {
-    font-weight: bold;
-  }
-
-  .company, .heading {
-    text-transform: uppercase;
-  }
-
-  table, th, td {
-    white-space: normal;
-    margin: 0.5;
-  }
-
-  .page-break {
-    page-break-before: always;
-  }
-
 }
