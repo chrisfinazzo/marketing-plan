@@ -1,5 +1,6 @@
 :root {
   --document: Arial, sans-serif;
+  --left: left;
 }
 
 @page {
@@ -23,11 +24,11 @@
   }
 
   .row, .statement {
-    text-align: left;
+    text-align: var(--left);
   }
 
   .left {
-    float: left;
+    float: var(--left);
   }
 
   .right {
