@@ -1,6 +1,7 @@
 :root {
   --document: Arial, sans-serif;
   --left: left;
+  --zero: 0;
 }
 
 @page {
@@ -14,8 +15,8 @@
   }
   
   html, body, p, div, table, thead, tbody, th, td {
-    margin: 0 auto;
-    padding: 0;
+    margin: var(--zero) auto;
+    padding: var(--zero);
     box-sizing: border-box;
   }
 
