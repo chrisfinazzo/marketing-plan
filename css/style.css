@@ -1,11 +1,12 @@
 :root {
   --document: Arial, sans-serif;
   --left: left;
+  --layout: portrait letter;
   --zero: 0;
 }
 
 @page {
-  size: 8.5in 11in;
+  size: var(--layout);
   margin: 0.5in;
 }
 
