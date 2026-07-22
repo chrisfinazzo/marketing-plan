@@ -14,7 +14,7 @@ proof:
 	make spelling && make duplicates && make passive && make weasels && make preview
 
 spelling:
-	aspell --lang=en --mode=sgml check christopher-m-finazzo-marketing-plan.html
+	aspell --lang=en --mode=sgml list < christopher-m-finazzo-marketing-plan.html
 
 weasels:
 	weasel-words.sh christopher-m-finazzo-marketing-plan.html
