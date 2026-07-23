@@ -10,8 +10,7 @@ passive:
 preview:
 	bbedit --preview christopher-m-finazzo-marketing-plan.html
 
-proof:
-	make spelling && make duplicates && make passive && make weasels && make preview
+proof: duplicates passive weasels spelling
 
 spelling:
 	aspell --lang=en --mode=sgml list < christopher-m-finazzo-marketing-plan.html
